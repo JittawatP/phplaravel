@@ -36,3 +36,7 @@ Route::post('/post', function(Request $request){
     $name = $request->name;
     return json_encode(['name' => $name]);
 });
+
+Route::get('/home', function(){
+    return view('home');
+});
